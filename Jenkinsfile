@@ -16,11 +16,9 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        stage('clone') {
+        stage('Clone') {
             steps {
-                steps {
-                    git 'https://github.com/sondhemotiv/jenkinson-pipeline.git'
-                }
+                git 'https://github.com/sondhemotiv/jenkinson-pipeline.git'
             }
         }
     }
